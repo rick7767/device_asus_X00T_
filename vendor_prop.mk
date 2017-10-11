@@ -21,6 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio.flac.sw.decoder.24bit=true \
+    vendor.audio_hal.period_multiplier=2 \
     vendor.audio.hw.aac.encoder=true \
     audio.sys.noisy.broadcast.delay=600 \
     vendor.audio.offload.buffer.size.kb=64 \
