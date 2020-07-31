@@ -583,5 +583,14 @@ on property:sys.boot_completed=1
     write /sys/class/gpio/unexport 12
 # Huaqin add for ZQL1820-84 by liunianliang at 2018/07/16 end
 
+# Smart Charging
+#Huaqin add for control charge by zhangjingzhi at 20180129 start
+on boot 
+chown system system /sys/class/power_supply/battery/charging_enabled 
+chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+chown system system /sys/class/power_supply/battery/input_suspend 
+chmod 0666 /sys/class/power_supply/battery/input_suspend
+#Huaqin add for control charge by zhangjingzhi at 20180129 end
+
 # default country code
 setprop ro.boot.wificountrycode 00
