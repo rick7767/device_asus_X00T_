@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,13 +28,10 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Gapps Config
-TARGET_GAPPS_ARCH := arm64
-
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := aosp_X00TD
+PRODUCT_NAME := lineage_X00TD
 PRODUCT_MODEL := ZenFone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
