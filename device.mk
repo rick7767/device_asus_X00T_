@@ -26,5 +26,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00TD/X00TD-vendor.mk)
