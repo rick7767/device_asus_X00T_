@@ -23,7 +23,7 @@ function blob_fixup() {
 
     # remove android.hidl.base dependency
     vendor/lib/hw/camera.sdm660.so)
-        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+        "$PATCHELF" --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
 
     esac
